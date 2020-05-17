@@ -33,11 +33,11 @@ def filt(file_name):
     d[columns[58]] = feedback
     filt = pd.DataFrame(d)
     
-    path = r"C:\Users\FYP\inria-bci-challenge\Train_filter\\" + file_name[0:len(file_name)-4] + "_filt.csv"
+    path = r"D:\BCI DS" + file_name[0:len(file_name)-4] + "_filt.csv"
     filt.to_csv(path, index = False)
 
 extension = 'csv'
-os.chdir(r"C:\Users\FYP\inria-bci-challenge\train")
+os.chdir(r"D:\BCI DS")
 result = glob.glob('*.{}'.format(extension))
 for i in result:
     filt(i)

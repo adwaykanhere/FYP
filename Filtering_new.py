@@ -5,7 +5,7 @@ import glob
 
 base_dir = r"D:\BCI DS"
 
-filenames = glob.glob('Data_S*.csv')
+filenames = glob.glob(base_dir'Data_S*.csv')
 print(filenames)
 
 

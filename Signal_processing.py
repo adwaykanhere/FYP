@@ -17,6 +17,7 @@ def butter_bandpass_filter(data, lowcut, highcut, fs, order=3):
 
 def filt(file_name):
     fs = 1000.0
+    #sampling freq is 200HZ
     lowcut = 0.5
     highcut = 40.0
     d = {}
